@@ -24,15 +24,14 @@ Given an array of integers `nums` and an integer `target`, find the indices of t
 Here’s the Python solution for the Two Sum problem:
 
 ```python
-def twoSum(nums, target):
-    num_map = {}  # Dictionary to store value and its index
-    
-    for i, num in enumerate(nums):
-        complement = target - num
-        if complement in num_map:
-            return [num_map[complement], i]
-        num_map[num] = i
-
+class Solution(object):
+    def twoSum(self, nums, target):
+        indices = {}
+        for i, num in enumerate(nums):
+            complement = target - num
+            if complement in indices:
+                return [indices[complement], i]
+            indices[num] = i
 
 ## 🔍 Explanation
 
