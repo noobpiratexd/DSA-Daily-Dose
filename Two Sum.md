@@ -1,4 +1,3 @@
-```markdown
 # 🧮 Two Sum Solution
 
 **[View Problem on LeetCode](https://leetcode.com/problems/two-sum/description/)**
@@ -33,7 +32,7 @@ def twoSum(nums, target):
         if complement in num_map:
             return [num_map[complement], i]
         num_map[num] = i
-```
+
 
 ## 🔍 Explanation
 
